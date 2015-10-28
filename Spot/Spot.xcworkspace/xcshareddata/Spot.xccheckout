@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>491B7243-C4D4-4273-8E82-D994E048D01F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Spot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9F1E76E9-0050-409D-A934-DB0EA9AB37EE</key>
+		<string>https://github.com/davidreeder/Spot.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Spot.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9F1E76E9-0050-409D-A934-DB0EA9AB37EE</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/davidreeder/Spot.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9F1E76E9-0050-409D-A934-DB0EA9AB37EE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F1E76E9-0050-409D-A934-DB0EA9AB37EE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Spot</string>
+		</dict>
+	</array>
+</dict>
+</plist>
