@@ -65,4 +65,3 @@ In WordSearchTranslateTests/ --
 
   * UnitTestsForModel.swift       :: Demonstration of Unit Tests against the MODEL.
 
-q
