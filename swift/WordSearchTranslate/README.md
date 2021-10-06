@@ -1,5 +1,5 @@
 
-#WordSearchTranslate: Architecture and Orientation
+# WordSearchTranslate: Architecture and Orientation
 
 Coded for iOS 12 with Swift 5 in Xcode 10.2.1.  Circa 2019.
 
