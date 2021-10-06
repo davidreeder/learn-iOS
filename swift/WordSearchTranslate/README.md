@@ -18,6 +18,8 @@ This is a fun exercise I engaged after reading the Swift 5 language specificatio
 It is a word search game.  User is given words in one langauge and expected to find the equivalent word in a different language.
 A session consists of a series of word search puzzles, all of which must be completed correctly to win.
 
+Puzzles are defined by a simple, scalable JSON schema which may be custom designed for any size, dimentions, words or languages.
+
 Designed so a single code path can run across all Apple device hardware formats.
 
 
@@ -63,3 +65,4 @@ In WordSearchTranslateTests/ --
 
   * UnitTestsForModel.swift       :: Demonstration of Unit Tests against the MODEL.
 
+q
