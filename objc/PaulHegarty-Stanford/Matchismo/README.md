@@ -1,9 +1,5 @@
 
-## README :: Matchismo ##
-- - - -
-
-David Reeder
-http://mobilesound.org
+## Matchismo ##
 
 
 This Xcode project represents a solution to the Matchismo assignments given by Paul Hegarty to his students at Stanford during his Winter 2012-2013 course titled "Developing Apps for iOS" (CS193P) which covers the fundamentals of development with iOS 6.  Autolayout updated for iOS7.

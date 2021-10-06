@@ -1,0 +1,7 @@
+
+ThisIsNotJSON.
+
+{"ThisIsBrokenJSON": "en", "word", "boy": }
+
+{"word": "girl", "target_language": "es"}
+

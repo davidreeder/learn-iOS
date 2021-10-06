@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xBj-SU-FmC">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="Mtm-fT-RLb">
+            <objects>
+                <splitViewController id="xBj-SU-FmC" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="uMY-XA-ng1" kind="relationship" relationship="masterViewController" id="cJn-sG-kQW"/>
+                        <segue destination="Un1-sc-lBj" kind="relationship" relationship="detailViewController" id="0q1-82-cZQ"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BfZ-2z-pBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752" y="-649"/>
+        </scene>
+        <!--Puzzle MasterVC-->
+        <scene sceneID="GUR-Aa-bJK">
+            <objects>
+                <viewController id="LJs-fx-X8D" customClass="PuzzleMasterVC" customModule="WordSearchTranslate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mfg-b8-iK7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfT-3W-TT1">
+                                <rect key="frame" x="0.0" y="68" width="375" height="730"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP5-wn-yL4">
+                                        <rect key="frame" x="0.0" y="19.999999999999993" width="375" height="100.33333333333331"/>
+                                        <viewLayoutGuide key="safeArea" id="aLh-vf-O52"/>
+                                        <string key="text">
+WordSearchTranslate
+</string>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYG-dI-1W5">
+                                        <rect key="frame" x="0.0" y="120.33333333333331" width="375" height="589.66666666666674"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="jKE-JL-6B7"/>
+                                        <string key="text">Search the puzzle for one or more translations from __SOURCELANGUAGE__ into __TARGETLANGUAGE__.
+
+The word to translate is __SOURCEWORD__.
+
+
+Number of remaining translations:
+__NNN__</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PYG-dI-1W5" firstAttribute="width" secondItem="sP5-wn-yL4" secondAttribute="width" id="2AI-NQ-cFY"/>
+                                    <constraint firstItem="sP5-wn-yL4" firstAttribute="centerX" secondItem="hfT-3W-TT1" secondAttribute="centerX" id="7Od-o2-1Du"/>
+                                    <constraint firstItem="PYG-dI-1W5" firstAttribute="top" secondItem="sP5-wn-yL4" secondAttribute="bottom" id="IFM-JX-k6j"/>
+                                    <constraint firstItem="PYG-dI-1W5" firstAttribute="centerX" secondItem="sP5-wn-yL4" secondAttribute="centerX" id="MQK-d4-O7t"/>
+                                    <constraint firstAttribute="bottom" secondItem="PYG-dI-1W5" secondAttribute="bottom" constant="20" id="MVL-19-G7I"/>
+                                    <constraint firstItem="sP5-wn-yL4" firstAttribute="top" secondItem="hfT-3W-TT1" secondAttribute="top" constant="20" id="cPK-pF-ts5"/>
+                                    <constraint firstItem="sP5-wn-yL4" firstAttribute="width" secondItem="hfT-3W-TT1" secondAttribute="width" id="kRR-WP-bRw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hfT-3W-TT1" firstAttribute="bottom" secondItem="8HU-87-ZSQ" secondAttribute="bottom" constant="20" id="Rc1-q9-LyE"/>
+                            <constraint firstItem="8HU-87-ZSQ" firstAttribute="trailing" secondItem="hfT-3W-TT1" secondAttribute="trailing" id="msl-DC-i1V"/>
+                            <constraint firstItem="8HU-87-ZSQ" firstAttribute="top" secondItem="hfT-3W-TT1" secondAttribute="top" constant="20" id="nXb-vb-uWL"/>
+                            <constraint firstItem="hfT-3W-TT1" firstAttribute="leading" secondItem="8HU-87-ZSQ" secondAttribute="leading" id="z2f-Dc-q4f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8HU-87-ZSQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="GGb-cG-CZD">
+                        <barButtonItem key="backBarButtonItem" title="Instructions" id="YSC-J9-YFu"/>
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="(placeholderForSegue)" id="ePZ-p1-LVw">
+                            <connections>
+                                <segue destination="82D-1e-0mh" kind="popoverPresentation" identifier="segueToPuzzleSettings" popoverAnchorBarButtonItem="ePZ-p1-LVw" id="lnP-QR-yJq">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="puzzleInstructionsTextView" destination="PYG-dI-1W5" id="zXq-2h-7cw"/>
+                        <segue destination="Un1-sc-lBj" kind="showDetail" identifier="segueToPuzzleDetail" id="RMe-fe-5wV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CP1-oe-nP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="-904"/>
+        </scene>
+        <!--puzzleSettingsVC-->
+        <scene sceneID="lGl-4p-WX1">
+            <objects>
+                <viewController title="puzzleSettingsVC" id="82D-1e-0mh" customClass="PuzzleSettingsVC" customModule="WordSearchTranslate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Bh-sw-2yY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ARu-dC-LCo">
+                                <rect key="frame" x="75.666666666666671" y="319.33333333333331" width="223.66666666666663" height="183.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the order of Puzzles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNG-2W-Zws">
+                                        <rect key="frame" x="0.0" y="0.0" width="223.66666666666666" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-Oi-Akj">
+                                        <rect key="frame" x="47.333333333333329" y="62.833333333333428" width="129" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="In Order"/>
+                                            <segment title="Random"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="puzzleIterationSegCtrlAction:forEvent:" destination="82D-1e-0mh" eventType="valueChanged" id="k8c-zM-5lu"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the translation given?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-IO-3iG">
+                                        <rect key="frame" x="21.333333333333329" y="106.33333333333337" width="181" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bu2-Ke-Nwj">
+                                        <rect key="frame" x="75.333333333333329" y="155.66666666666669" width="72.999999999999986" height="29"/>
+                                        <segments>
+                                            <segment title="No"/>
+                                            <segment title="Yes"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="displayTranslationSegCtrlAction:forEvent:" destination="82D-1e-0mh" eventType="valueChanged" id="FbB-ZR-xqR"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ARu-dC-LCo" firstAttribute="centerX" secondItem="2kf-rM-JN8" secondAttribute="centerX" id="fxN-37-EY9"/>
+                            <constraint firstItem="ARu-dC-LCo" firstAttribute="centerY" secondItem="2kf-rM-JN8" secondAttribute="centerY" id="uNV-wT-pNJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2kf-rM-JN8"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayTranslationLabel" destination="r8z-IO-3iG" id="NcL-DD-FmH"/>
+                        <outlet property="displayTranslationSegCtrlOutlet" destination="bu2-Ke-Nwj" id="MKh-FH-neO"/>
+                        <outlet property="puzzleIterationLabel" destination="NNG-2W-Zws" id="3gk-ca-mIR"/>
+                        <outlet property="puzzleIterationSegCtrlOutlet" destination="jYc-Oi-Akj" id="Z8K-8j-uq3"/>
+                        <outlet property="stackViewOutlet" destination="ARu-dC-LCo" id="Pe7-p9-rX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kb-Uq-0LX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2098" y="-650"/>
+        </scene>
+        <!--Puzzle DetailVC-->
+        <scene sceneID="mdF-zr-FeG">
+            <objects>
+                <viewController id="Un1-sc-lBj" customClass="PuzzleDetailVC" customModule="WordSearchTranslate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QyR-LX-nu2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UnB-qz-m1c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XF4-kB-KSL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzu-iR-ARt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="-225"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8w6-97-iLa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uMY-XA-ng1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9qx-sn-6Lq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LJs-fx-X8D" kind="relationship" relationship="rootViewController" id="S02-L3-lTF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAp-p0-3ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-904"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RMe-fe-5wV"/>
+    </inferredMetricsTieBreakers>
+</document>

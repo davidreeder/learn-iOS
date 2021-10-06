@@ -1,0 +1,24 @@
+
+# FOUR TARGET WORDS.
+{ "source_language": "en", "word": "girl (+ other words)", "character_grid": [ ["o",       "s",      "\u00f3", "x", "h",      "\u00f1",    "h"], ["e",       "r",      "g",      "o", "l",      "\u00fa", "b"], ["l",       "t",      "c",      "h", "i",      "c",         "a"], ["e",       "\u00fa", "a",      "w", "\u00e1", "t",         "\u00e9"], ["g",       "n",      "\u00ed",      "r", "q",      "m",         "l"], ["i",       "d",      "a",      "e", "a",      "\u00f3",    "l"], ["r",       "t",      "n",      "i", "\u00f1", "a",         "s"] ], "word_locations": { "2,2,3,2,4,2,5,2,6,2": "chica", "2,6,3,6,4,6,5,6": "ni\u00f1a", "0,1,0,2,0,3,0,4,0,5,0,6": "elegir", "2,2,2,3,2,4,2,5,2,6": "ca\u00edan" }, "target_language": "es" } 
+
+
+# ASYMMETRIC GRID: SHORT WIDTH.
+{ "source_language": "en", "word": "apple", "character_grid": [ ["\u00ed", "n", "z", "d", "o"], ["e", "y", "z", "o", "\u00f1"], ["v", "e", "x", "u", "m"], ["t", "k", "m", "l", "a"], ["\u00ed", "a", "u", "q", "n"], ["c", "n", "k", "\u00fa", "z"], ["p", "\u00fa", "\u00e9", "k", "a"], ["n", "i", "b", "\u00f3", "n"], ["j", "f", "q", "g", "a"] ], "word_locations": { "4,2,4,3,4,4,4,5,4,6,4,7,4,8": "manzana" }, "target_language": "es" } 
+
+
+# ASYMMETRIC GRID: SHORT HEIGHT.
+{ "source_language": "en", "word": "eat", "character_grid": [ ["i", "a", "c", "j", "r", "w"], ["k", "b", "n", "o", "u", "v"], ["v", "x", "z", "f", "m", "a"], ["u", "l", "o", "p", "e", "o"], ], "word_locations": { "2,0,3,1,4,2,5,3": "como" }, "target_language": "es" } 
+
+
+# DIFFERENT TARGET LANGUAGE.
+{ "source_language": "en", "word": "eat", "character_grid": [ ["i", "a", "c", "j", "r", "w"], ["k", "b", "n", "o", "u", "v"], ["v", "x", "z", "f", "m", "a"], ["e", "s", "s", "e", "n", "o"], ], "word_locations": { "0,3,1,3,2,3,3,3,4,3": "essen" }, "target_language": "de" } 
+
+
+
+# RESOURCES--
+#
+# https://en.wikipedia.org/wiki/List_of_Unicode_characters
+# https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+#
+

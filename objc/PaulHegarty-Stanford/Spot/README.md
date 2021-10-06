@@ -1,9 +1,6 @@
 
-## README :: Spot ##
-- - - -
+## Spot ##
 
-David Reeder
-http://mobilesound.org 
 
 Spot browses image collections at Flickr.  For iPhone and iPad.
 
